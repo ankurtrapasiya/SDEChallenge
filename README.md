@@ -22,3 +22,20 @@ We need to provide Google Analytic like services to our customers. Please provid
 3. Provide metrics to customers with at most one hour delay.
 4. Run with minimum downtime.
 5. Have the ability to reprocess historical data in case of bugs in the processing logic.
+
+
+
+##Coding Questions 
+
+Moving Average Finding Data Structure
+-> Implementation is based on Double Ended Queue(Deque)
+-> Implementation is not thread safe
+-> Space complexity is O(1)
+-> Time complexity is O(WindowSize)
+
+Explanation about implementation
+-> We maintaing a running sum for window size N or less than that
+-> When we receive an element, we recalculate the running sum. We check if with current number our window expands beyond N then we peek the element from head of the Queue, remove it from running
+sum and add the received number to the WindowSum. Hence WindowSum remains for last N elements
+-> While calculating the running average, we check if total elements are less than windowSize then we calculate average with that windowSize otherwise we calculate running average on N
+-> Implementation is generic for any Wrapper class extending Number super class
