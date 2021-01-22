@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.paytm.MovingAverageDequeImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-01-22T07:19:46" hostname="DESKTOP-06H61AM" time="0.029">
+  <properties/>
+  <testcase name="testGetAllElements()" classname="com.paytm.MovingAverageDequeImplTest" time="0.021"/>
+  <testcase name="testAddNullElement()" classname="com.paytm.MovingAverageDequeImplTest" time="0.002"/>
+  <testcase name="testGetMovingAverage()" classname="com.paytm.MovingAverageDequeImplTest" time="0.002"/>
+  <testcase name="testNegativeWindowSize()" classname="com.paytm.MovingAverageDequeImplTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
