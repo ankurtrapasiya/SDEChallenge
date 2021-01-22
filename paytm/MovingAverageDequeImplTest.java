@@ -54,4 +54,9 @@ public class MovingAverageDequeImplTest extends TestCase {
 
         Assert.assertTrue(allElements.containsAll(expectedElements));
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeWindowSize() {
+        new MovingAverageDequeImpl(-1);
+    }
 }

@@ -10,6 +10,9 @@ public class MovingAverageDequeImpl implements MovingAverageDeque<Integer> {
     private final ArrayDeque<Integer> deque = new ArrayDeque<>();
 
     public MovingAverageDequeImpl(int windowSize) {
+        if(windowSize<0) {
+            throw new IllegalArgumentException("Window size must be greater than 0");
+        }
         this.windowSize = windowSize;
     }
 
